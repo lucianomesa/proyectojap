@@ -1,4 +1,3 @@
-<!--Para crear éste código nos basamos en la estructura del archivo "categories.html"-->
 <!DOCTYPE html>
 <html lang="es">
 
@@ -14,7 +13,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-1">
+  <nav class="navbar navbar-expand-lg navbar-dark  p-1" id="navbar">
     <div class="container">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,45 +37,12 @@
     </div>
   </nav>
   <main class="pb-5 container">
-    <div id="prodlistcontainer" class="container">
-      <div class="container">
-        <div class="row">
-          <div class="col text-end">
-            <div class="btn-group btn-group-toggle mb-4" data-bs-toggle="buttons">
-              <input type="radio" class="btn-check" name="options" id="sortAsc">
-              <label class="btn btn-light" for="sortAsc">A-Z</label>
-              <input type="radio" class="btn-check" name="options" id="sortDesc">
-              <label class="btn btn-light" for="sortDesc">Z-A</label>
-              <input type="radio" class="btn-check" name="options" id="sortByCount" checked>
-              <label class="btn btn-light" for="sortByCount"><i class="fas fa-sort-amount-down mr-1"></i></label>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6 offset-lg-6 col-md-12 mb-1 container">
-            <div class="row container p-0 m-0">
-              <div class="col">
-                <p class="font-weight-normal text-end my-2">Cant.</p>
-              </div>
-              <div class="col">
-                <input class="form-control" type="number" placeholder="min." id="rangeFilterCountMin">
-              </div>
-              <div class="col">
-                <input class="form-control" type="number" placeholder="máx." id="rangeFilterCountMax">
-              </div>
-              <div class="col-3 p-0">
-                <div class="btn-group" role="group">
-                  <button class="btn btn-light btn-block" id="rangeFilterCount">Filtrar</button>
-                  <button class="btn btn-link btn-sm" id="clearRangeFilter">Limpiar</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="list-group" id="cat-list-container">
-          </div>
-        </div>
+    <div>
+      <h1 class="titulo">Productos</h1>
+      <h2 class="subtitulo">Verás aquí todos los productos de la categoría Autos</h2>
+
+      <div class="list-container">
+        
       </div>
     </div>
   </main>
@@ -98,7 +64,7 @@
   </div>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/init.js"></script>
-  <script src="js/products.js"></script>
+  <script src="js/products.js" defer></script>
 </body>
 
 </html>
