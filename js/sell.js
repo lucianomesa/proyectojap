@@ -147,3 +147,10 @@ document.addEventListener("DOMContentLoaded", function(e){
         }
     });
 });
+function userNavbar(){
+    let usuario = document.getElementById("venderUser");
+    const storedData = JSON.parse(sessionStorage.datos);
+    usuario.innerHTML += 
+    `<a class="nav-link" href="index.html">${storedData.email}</a>`
+}
+userNavbar()
